@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Predictions</title>
+    
+    <!-- Add your custom styles here -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #77C3EC;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Predictions</h1>
+    
+    <!-- Add a styled table to display predictions -->
+    <table>
+        <thead>
+            <tr>
+                <th>URL</th>
+                <th>Prediction</th>
+                <th>Legitimate Suggestion</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for prediction in predictions %}
+                <tr>
+                    <td>{{ prediction.url }}</td>
+                    <td>{{ prediction.prediction }}</td>
+                    <td>{{ prediction.legitimate_suggestion or 'N/A' }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Add other content as needed -->
+</body>
+</html>
