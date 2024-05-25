@@ -1,0 +1,6 @@
+Detection of Phishing Websites Using Machine Learning.
+
+Algorithm / Model Used: Gradient Boosting Classifier.
+
+Training Accuracy : 0.989
+Test Accuracy: 0.974.
