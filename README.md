@@ -52,9 +52,9 @@ We developed a machine learning model that identifies phishing websites based on
 
 ## Contributors
 - [Navanisha S] -Developer
-- - [Pavan L] -Developer
-  - - [Pooja G R] -Developer
-    - - [Pooja K S] -Developer
+- [Pavan L] -Developer
+- [Pooja G R] -Developer
+- [Pooja K S] -Developer
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
